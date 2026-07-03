@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://my-api-connect-with-react-3.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 export default API;
